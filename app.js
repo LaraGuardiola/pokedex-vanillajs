@@ -1,4 +1,5 @@
 let midScreen = document.querySelector('.mid-screen')
+window.onload(showPokemon())
 
 function showPokemon(){
     fetch('https://pokeapi.co/api/v2/pokemon?limit=151') 
@@ -14,7 +15,6 @@ function showPokemon(){
                 p.forEach(p => p.remove())
                 let index = i + 1
                 showSprites(index)
-
             }
         }
     })
@@ -27,10 +27,24 @@ function showSprites(index){
         let img = document.createElement('img')
         midScreen.appendChild(img)
         img.src = src.sprites.front_default
+        let backBtn = document.createElement('p')
+        midScreen.appendChild(backBtn)
+        backBtn.setAttribute('class', "back-btn")
+        backBtn.innerHTML = "back"
+        backBtn.onclick = function(){
+            let sons = removeSprite()
+            sons.forEach(son =>{
+                son.remove()
+            })
+            showPokemon()
+        }
     })
 }
 
-window.onload(showPokemon())
+function removeSprite(){
+    let sons = document.querySelectorAll('.mid-screen > *')
+    return sons
+}
 
 function getParagraphs(){
     let p = document.querySelectorAll('.mid-screen > p')

@@ -143,6 +143,11 @@
     background-color: #d5e4ef;
 }
 
+.back-btn{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
 .lower-screen{
     display:flex;
     flex-direction: row;
