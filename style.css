@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex{
+    background-color: #f44336;
+    border: 1px solid black;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+/* UPPER SECTION - CIRCLES */
+
+.upper-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.circles-section{
+    display: flex;
+}
+
+.line-section{
+    display: flex;
+    margin-left: 15px;
+}
+
+.line-section{
+    position: relative;
+    bottom: 60px;
+}
+
+.big-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin:1.5rem;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+.smaller-circle{
+    background-color: #52aef7;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+}
+
+.circles{
+    background-color: blueviolet;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-left:15px;
+    width: 20px;
+    height: 20px;
+}
+
+.red{
+    background-color: #e60c0f;
+}
+
+.yellow{
+    background-color: #f7e00f;
+}
+
+.green{
+    background-color: #0de536;
+}
+
+/* MID-SECTION - SCREEN */
+
+.mid-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.screen{
+    display: flex;
+    flex-direction: column;
+    background-color: #efefee;
+    width: 90%;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.top-screen{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.small-circle{
+    background-color: #e40d0c;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin:5px;
+    border: 1px solid black;
+}
+
+.mid-screen{
+    background-color: #dcdcde;
+    width: 90%;
+    height: 190px;
+    margin-left:5%
+}
+
+.lower-screen{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lower-screen-left{
+    padding: 5px;
+}
+
+.mid-circle{
+    background: #e40d0c;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
