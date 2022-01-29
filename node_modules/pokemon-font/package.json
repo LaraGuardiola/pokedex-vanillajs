@@ -1,0 +1,33 @@
+{
+  "name": "pokemon-font",
+  "description": "GAME BOY font from Pokémon R/G/B/Y/G/S/C, Unicode extended.",
+  "version": "1.8.1",
+  "style": "css/pokemon-font.css",
+  "keywords": [
+    "font",
+    "pokemon",
+    "webfont",
+    "glyphs",
+    "gameboy",
+    "retro",
+    "japanese",
+    "pixels",
+    "bitmap",
+    "hiragana",
+    "katakana",
+    "latin"
+  ],
+  "author": {
+    "name": "Pascal Pixel",
+    "email": "pascal@superpencil.com",
+    "web": "http://twitter.com/pascalpixel"
+  },
+  "homepage": "http://superpencil.com/work/pokemon-font/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Superpencil/pokemon-font.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Superpencil/pokemon-font/issues"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "pokedex-vanillajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaraGuardiola/pokedex-vanillajs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaraGuardiola/pokedex-vanillajs/issues"
+  },
+  "homepage": "https://github.com/LaraGuardiola/pokedex-vanillajs#readme",
+  "dependencies": {
+    "pokemon-font": "^1.8.1"
+  }
+}

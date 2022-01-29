@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Pokemon GB'; /*a name to be used later*/
 }
 
 .main-container{
@@ -127,6 +128,19 @@
     height: 220px;
     margin-left:5%;
     border-radius:20px;
+    padding: 0.5rem;
+    overflow: auto;
+    
+}
+
+.mid-screen > p {
+    text-transform: capitalize;
+    padding: 2px;
+    cursor: pointer
+}
+
+.mid-screen > p:hover {
+    background-color: #d5e4ef;
 }
 
 .lower-screen{
