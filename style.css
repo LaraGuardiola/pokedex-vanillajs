@@ -130,7 +130,7 @@
     border-radius:20px;
     padding: 0.5rem;
     overflow: auto;
-    
+    user-select: none;
 }
 
 .mid-screen > p {

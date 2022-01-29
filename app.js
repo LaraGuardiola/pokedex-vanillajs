@@ -12,18 +12,21 @@ function showPokemon(){
             p.onclick = function(){
                 let p = getParagraphs()
                 p.forEach(p => p.remove())
+                let index = i + 1
+                showSprites(index)
+
             }
         }
-        /*for(let x = 1; x < 152; x++)
-            fetch(`https://pokeapi.co/api/v2/pokemon-form/${x}`)
-            .then(response => response.json())
-            .then(src => {
-                let img = document.createElement('img')
-                midScreen.appendChild(img)
-                img.src = src.sprites.front_default
-                console.log(src.sprites.front_default)
-            })*/
-        
+    })
+}
+
+function showSprites(index){
+    fetch(`https://pokeapi.co/api/v2/pokemon-form/${index}`)
+    .then(response => response.json())
+    .then(src => {
+        let img = document.createElement('img')
+        midScreen.appendChild(img)
+        img.src = src.sprites.front_default
     })
 }
 
