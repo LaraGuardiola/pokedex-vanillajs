@@ -39,6 +39,46 @@
 
 .circles-section{
     display: flex;
+    position: relative
+}
+
+.shiny-reflection{
+    clip-path: ellipse(16% 32% at 50% 50%);
+    width: 50px;
+    height: 50px;
+    background-color: #badbf8;
+    position: absolute;
+    top:25px;
+    left:22px;
+    transform: rotate(42deg);
+}
+
+.tiny-shiny-reflection{
+    clip-path: ellipse(16% 32% at 50% 50%);
+    width: 10px;
+    height: 10px;
+    transform: rotate(42deg);
+}
+
+.reflection1{
+    background-color: #f0a19c;
+    position: absolute;
+    top:48px;
+    left: 143px;
+}
+
+.reflection2{
+    background-color: #f7f197;
+    position: absolute;
+    top:48px;
+    left: 178px;
+}
+
+.reflection3{
+    background-color: #90f7a8;
+    position: absolute;
+    top:48px;
+    left: 213px;
 }
 
 .line-section{
