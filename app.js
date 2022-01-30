@@ -1,12 +1,12 @@
 let midScreen = document.querySelector('.mid-screen')
-window.onload(showPokemon())
+
+showPokemon()
 
 function showPokemon(){
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=151') 
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=251') 
     .then(response => response.json())
     .then(function(data) {
         for(let i = 0; i < data.results.length; i++){
-            console.log(data.results[i].name)
             let p = document.createElement('p')
             midScreen.appendChild(p)
             p.innerHTML = `${i+1}.${data.results[i].name}`
@@ -14,16 +14,17 @@ function showPokemon(){
                 let p = getParagraphs()
                 p.forEach(p => p.remove())
                 let index = i + 1
-                showSprites(index)
+                showSprites(index,data.results[i].name)
             }
         }
     })
 }
 
-function showSprites(index){
+function showSprites(index,description){
     fetch(`https://pokeapi.co/api/v2/pokemon-form/${index}`)
     .then(response => response.json())
     .then(src => {
+        console.log(src)
         let img = document.createElement('img')
         midScreen.appendChild(img)
         img.src = src.sprites.front_default
@@ -33,6 +34,10 @@ function showSprites(index){
             backBtn.setAttribute('class', "back-btn")
             backBtn.innerHTML = "back"
         },100)
+        createStats(midScreen,"stat1","name",description)
+        createStats(midScreen,"stat2","type",src.types[0].type.name)
+        getHabitat(src.id)
+
         backBtn.onclick = function(){
             let sons = removeSprite()
             sons.forEach(son =>{
@@ -41,6 +46,21 @@ function showSprites(index){
             showPokemon()
         }
     })
+}
+
+function getHabitat(id){
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
+    .then(response => response.json())
+    .then(data => {
+        createStats(midScreen,"stat3","habitat", data.habitat.name)
+    })
+}
+
+function createStats(midScreen,className,stat,description){
+    let pokemonName = document.createElement('p')
+    midScreen.appendChild(pokemonName)
+    pokemonName.innerHTML = `${stat}: ${description}`
+    pokemonName.setAttribute('class',className)
 }
 
 function removeSprite(){

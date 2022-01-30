@@ -133,6 +133,24 @@
     user-select: none;
 }
 
+.stat1{
+    position: absolute;
+    left: 128px;
+    top: 60px;
+}
+
+.stat2{
+    position: absolute;
+    left: 128px;
+    top: 95px;
+}
+
+.stat3{
+    position: absolute;
+    left: 128px;
+    top: 130px;
+}
+
 .mid-screen > p {
     text-transform: capitalize;
     padding: 2px;
@@ -148,6 +166,8 @@
     top: 220px;
     left: 40px;
 }
+
+/* LOWER SCREEN */
 
 .lower-screen{
     display:flex;
