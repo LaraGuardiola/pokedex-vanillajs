@@ -3,7 +3,7 @@ const midScreen = document.querySelector('.mid-screen')
 showPokemon()
 
 function showPokemon(){
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=251') 
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=386') 
     .then(response => response.json())
     .then(function(data) {
         for(let i = 0; i < data.results.length; i++){
@@ -70,16 +70,3 @@ function getParagraphs(){
     let p = document.querySelectorAll('.mid-screen > p')
     return p
 }
-
-
-
-
-const xhr = new XMLHttpRequest();
-
-xhr.addEventListener('load', () => {
-    console.log(xhr.response);
-});
-
-xhr.open('POST', 'https://api.pkmnapi.com/v1/roms', true);
-xhr.setRequestHeader('Authorization', 'Y5cgqVVDCW6BHItEIEls5nAMmMVfmCA6BcE3kHKIaBBis6vGlQOntbq8BGka4GlX');
-xhr.send(rom_data);
