@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: 'pokemon_gbregular';
+    font-family: 'pokemon_gbregular', monospace;
 }
 
 @font-face {
