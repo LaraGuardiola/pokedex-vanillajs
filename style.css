@@ -333,7 +333,7 @@
 
 @media only screen and (max-width: 480px){
     .red-bar{
-        background-color: #f10f0d;
+        background-color: #53fd02;
         border: 1px solid black;
         width: 45%;
         height: 8px;
@@ -341,7 +341,7 @@
     }
     
     .gray-bar{
-        background-color: #949694;
+        background-color: #f56610;
         border: 1px solid black;
         width: 45%;
         height: 8px;
@@ -350,7 +350,7 @@
     }
     
     .green-screen{
-        background-color: #0cba23;
+        background-color: #fbfb05;
         margin-left: 15px;
         margin-top: 15px;
         width: 170px;
@@ -383,7 +383,7 @@
     }
 
     .pokedex{
-        background-color: #f44336;
+        background-color: #fb0506;
         width: 100vw;
         border-radius: 0px;
         border: 0px;
