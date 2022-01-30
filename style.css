@@ -36,11 +36,12 @@
 .line-section{
     display: flex;
     margin-left: 15px;
-}
-
-.line-section{
     position: relative;
     bottom: 60px;
+}
+
+.line-section > img{
+    width: 95vw;
 }
 
 .big-circle{
@@ -232,7 +233,7 @@
 .red-bar{
     background-color: #f10f0d;
     border: 1px solid black;
-    width: 80px;
+    width: 45%;
     height: 8px;
     border-radius: 5px;
 }
@@ -240,7 +241,7 @@
 .gray-bar{
     background-color: #949694;
     border: 1px solid black;
-    width: 80px;
+    width: 45%;
     height: 8px;
     margin-left: 10px;
     border-radius: 5px;
@@ -276,4 +277,73 @@
     background-color: #474746;
     border-radius: 5px;
     border: 1px solid black;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px){
+    .red-bar{
+        background-color: #f10f0d;
+        border: 1px solid black;
+        width: 45%;
+        height: 8px;
+        border-radius: 5px;
+    }
+    
+    .gray-bar{
+        background-color: #949694;
+        border: 1px solid black;
+        width: 45%;
+        height: 8px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    
+    .green-screen{
+        background-color: #0cba23;
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 170px;
+        height:90px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    
+    .cross{
+        margin-top: 3rem;
+        margin-left: 30px;
+        background-color: #373636;
+        width: 70px;
+        height: 70px;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        transform: rotate(45deg);
+        border:1px solid black;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mini-circle{
+        width: 10px;
+        height: 10px;
+        background-color: #474746;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    .pokedex{
+        background-color: #f44336;
+        width: 100vw;
+    }
+    .line-section{
+        display: flex;
+        margin-left: 15px;
+        position: relative;
+        bottom: 50px;
+    }
+    
+    .line-section > img{
+        width: 95vw;
+    }
 }

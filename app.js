@@ -1,4 +1,4 @@
-let midScreen = document.querySelector('.mid-screen')
+const midScreen = document.querySelector('.mid-screen')
 
 showPokemon()
 
@@ -24,7 +24,6 @@ function showSprites(index,description){
     fetch(`https://pokeapi.co/api/v2/pokemon-form/${index}`)
     .then(response => response.json())
     .then(src => {
-        console.log(src)
         let img = document.createElement('img')
         midScreen.appendChild(img)
         img.src = src.sprites.front_default
@@ -37,7 +36,6 @@ function showSprites(index,description){
         createStats(midScreen,"stat1","name",description)
         createStats(midScreen,"stat2","type",src.types[0].type.name)
         getHabitat(src.id)
-
         backBtn.onclick = function(){
             let sons = removeSprite()
             sons.forEach(son =>{
