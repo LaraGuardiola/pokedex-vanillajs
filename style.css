@@ -144,8 +144,9 @@
 }
 
 .back-btn{
-    margin-top: 70px;
-    margin-left: 10px;
+    position: absolute;
+    top: 220px;
+    left: 40px;
 }
 
 .lower-screen{

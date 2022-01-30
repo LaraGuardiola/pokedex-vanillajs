@@ -29,8 +29,10 @@ function showSprites(index){
         img.src = src.sprites.front_default
         let backBtn = document.createElement('p')
         midScreen.appendChild(backBtn)
-        backBtn.setAttribute('class', "back-btn")
-        backBtn.innerHTML = "back"
+        setTimeout(()=>{
+            backBtn.setAttribute('class', "back-btn")
+            backBtn.innerHTML = "back"
+        },100)
         backBtn.onclick = function(){
             let sons = removeSprite()
             sons.forEach(son =>{
