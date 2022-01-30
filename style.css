@@ -356,4 +356,28 @@
     .line-section > img{
         width: 95vw;
     }
+
+    .back-btn {
+        position: absolute;
+        top: 60px;
+        left: 240px;
+    }
+
+    .stat1 {
+        position: absolute;
+        left: 35px;
+        top: 140px;
+    }
+
+    .stat2 {
+        position: absolute;
+        left: 35px;
+        top: 175px;
+    }
+
+    .stat3 {
+        position: absolute;
+        left: 35px;
+        top: 210px;
+    }
 }

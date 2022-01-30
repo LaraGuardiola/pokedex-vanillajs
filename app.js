@@ -70,3 +70,16 @@ function getParagraphs(){
     let p = document.querySelectorAll('.mid-screen > p')
     return p
 }
+
+
+
+
+const xhr = new XMLHttpRequest();
+
+xhr.addEventListener('load', () => {
+    console.log(xhr.response);
+});
+
+xhr.open('POST', 'https://api.pkmnapi.com/v1/roms', true);
+xhr.setRequestHeader('Authorization', 'Y5cgqVVDCW6BHItEIEls5nAMmMVfmCA6BcE3kHKIaBBis6vGlQOntbq8BGka4GlX');
+xhr.send(rom_data);
