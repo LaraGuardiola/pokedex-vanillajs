@@ -335,6 +335,8 @@
     .pokedex{
         background-color: #f44336;
         width: 100vw;
+        border-radius: 0;
+        border: 0;
     }
     .line-section{
         display: flex;
