@@ -5,16 +5,21 @@ const titleGif = document.querySelector('.title')
 window.addEventListener('DOMContentLoaded',()=>{
     setTimeout(()=>{
         titleGif.style.display = 'block'
-    },23000)
+    },23500)
 })
 
 document.addEventListener('click',() => {
-    introGif.classList.add('fadeout-intro')
-    titleGif.classList.add('fadeout-intro')
+    addFadeout(introGif,titleGif)
     setTimeout(()=>{
         preparePokemonList()
     },1000)
 },false)
+
+function addFadeout(...args){
+    args.forEach(elem => {
+        elem.classList.add('fadeout-intro')
+    })
+}
 
 function preparePokemonList(){
     updateStyles()
