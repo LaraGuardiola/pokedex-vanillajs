@@ -33,7 +33,7 @@
     margin-top:-7px;
     height: 218px;
     position: absolute;
-    left: 82px;
+    left: 105px;
 }
 
 .fadeout-intro{
@@ -206,14 +206,13 @@
     padding: 0.5rem;
     overflow: auto;
     user-select: none;
-    position: relative;
 }
 
 .title{
     position: absolute;
     font-size: 12px;
-    top:96px;
-    left:113px;
+    top:130px;
+    left:135px;
     color: #6b3d49;
     background-color: #cfd6d6;
     z-index: 3;
@@ -375,7 +374,9 @@
 
 /* mobile */
 
-@media only screen and (max-width: 480px){
+
+
+@media only screen and (max-width: 413px){
     .red-bar{
         background-color: #53fd02;
         border: 1px solid black;
@@ -477,15 +478,15 @@
     .intro{
         margin-top:-7px;
         height: 218px;
-        position: absolute;
-        left: 38px;
+        position: relative;
+        left: 40px;
     }
 
     .title{
         position: absolute;
         font-size: 12px;
-        top:96px;
-        left:70px;
+        top:130px;
+        left:95px;
         color: #6b3d49;
         background-color: #cfd6d6;
         z-index: 3;

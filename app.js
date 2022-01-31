@@ -1,8 +1,10 @@
 const midScreen = document.querySelector('.mid-screen')
 const introGif = document.querySelector('.intro')
 const titleGif = document.querySelector('.title')
+let reloaded = 0;
 
 window.addEventListener('DOMContentLoaded',()=>{
+    reloaded++
     setTimeout(()=>{
         titleGif.style.display = 'block'
     },23500)
