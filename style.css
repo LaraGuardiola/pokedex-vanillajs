@@ -29,6 +29,32 @@
     border-radius: 1rem;
 }
 
+.intro{
+    margin-top:-7px;
+    height: 218px;
+    position: absolute;
+    left: 82px;
+}
+
+.fadeout-intro{
+    animation: fadeoutIntro 1s ease-out;
+}
+
+@keyframes fadeoutIntro{
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 25%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
 /* UPPER SECTION - CIRCLES */
 
 .upper-section{
@@ -172,7 +198,7 @@
 }
 
 .mid-screen{
-    background-color: #dcdcde;
+    background-color: #130a0b;
     width: 90%;
     height: 220px;
     margin-left:5%;
@@ -180,30 +206,42 @@
     padding: 0.5rem;
     overflow: auto;
     user-select: none;
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    font-size: 12px;
+    top:96px;
+    left:113px;
+    color: #6b3d49;
+    background-color: #cfd6d6;
+    z-index: 3;
+    display: none;
 }
 
 .stat1{
     position: absolute;
-    left: 128px;
-    top: 60px;
+    left: 105px;
+    top: 30px;
 }
 
 .stat2{
     position: absolute;
-    left: 128px;
-    top: 95px;
+    left: 105px;
+    top: 65px;
 }
 
 .stat3{
     position: absolute;
-    left: 128px;
-    top: 130px;
+    left: 105px;
+    top: 100px;
 }
 
 .stat4{
     position: absolute;
-    left: 360px;
-    top: 220px;
+    left: 340px;
+    top: 170px;
 }
 
 .mid-screen > p {
@@ -218,7 +256,7 @@
 
 .back-btn{
     position: absolute;
-    top: 220px;
+    top: 170px;
     left: 40px;
 }
 
@@ -408,31 +446,48 @@
 
     .back-btn {
         position: absolute;
-        top: 60px;
-        left: 240px;
+        top: 16px;
+        left: 230px;
     }
 
     .stat1 {
         position: absolute;
-        left: 35px;
-        top: 140px;
+        left: 17px;
+        top: 100px;
     }
 
     .stat2 {
         position: absolute;
-        left: 35px;
-        top: 175px;
+        left: 17px;
+        top: 135px;
     }
 
     .stat3 {
         position: absolute;
-        left: 35px;
-        top: 210px;
+        left: 17px;
+        top: 170px;
     }
     
     .stat4{
         position: absolute;
         left: 120px;
-        top: 60px;
+        top: 16px;
+    }
+
+    .intro{
+        margin-top:-7px;
+        height: 218px;
+        position: absolute;
+        left: 38px;
+    }
+
+    .title{
+        position: absolute;
+        font-size: 12px;
+        top:96px;
+        left:70px;
+        color: #6b3d49;
+        background-color: #cfd6d6;
+        z-index: 3;
     }
 }

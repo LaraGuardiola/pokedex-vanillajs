@@ -1,6 +1,32 @@
 const midScreen = document.querySelector('.mid-screen')
+const introGif = document.querySelector('.intro')
+const titleGif = document.querySelector('.title')
 
-showPokemon()
+window.addEventListener('DOMContentLoaded',()=>{
+    setTimeout(()=>{
+        titleGif.style.display = 'block'
+    },23000)
+})
+
+document.addEventListener('click',() => {
+    introGif.classList.add('fadeout-intro')
+    titleGif.classList.add('fadeout-intro')
+    setTimeout(()=>{
+        preparePokemonList()
+    },1000)
+},false)
+
+function preparePokemonList(){
+    updateStyles()
+    showPokemon()
+}
+
+function updateStyles(){
+    document.querySelector('.mid-screen > .intro').remove()
+    titleGif.remove()
+    midScreen.style.backgroundColor = '#dcdcde'
+    midScreen.classList.add('mid-screen-intro')
+}
 
 function showPokemon(){
     fetch('https://pokeapi.co/api/v2/pokemon?limit=386') 
