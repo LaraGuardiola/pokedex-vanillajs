@@ -31,7 +31,8 @@ function showStats(index,description){
         getHabitat(src.id)
         printSprite(src)
         createStats("stat1","name",description)
-        createStats("stat2","type",src.types[0].type.name) 
+        createStats("stat2","type",src.types[0].type.name)
+        createStats("stat4","#",index) 
     })
 }
 
@@ -63,10 +64,16 @@ function getHabitat(id){
 }
 
 function createStats(className,stat,description){
-    let pokemonName = document.createElement('p')
-    midScreen.appendChild(pokemonName)
-    pokemonName.innerHTML = `${stat}: ${description}`
-    pokemonName.setAttribute('class',className)
+    let pokemonStat = document.createElement('p')
+    midScreen.appendChild(pokemonStat)
+    if(stat === "#"){
+        pokemonStat.innerHTML = `${stat}${description}`
+        pokemonStat.setAttribute('class',className)
+    }else{
+        pokemonStat.innerHTML = `${stat}: ${description}`
+        pokemonStat.setAttribute('class',className)
+    }
+    
 }
 
 function removeSprite(){

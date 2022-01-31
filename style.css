@@ -200,6 +200,12 @@
     top: 130px;
 }
 
+.stat4{
+    position: absolute;
+    left: 360px;
+    top: 220px;
+}
+
 .mid-screen > p {
     text-transform: capitalize;
     padding: 2px;
@@ -388,6 +394,7 @@
         border-radius: 0px;
         border: 0px;
     }
+
     .line-section{
         display: flex;
         margin-left: 15px;
@@ -421,5 +428,11 @@
         position: absolute;
         left: 35px;
         top: 210px;
+    }
+    
+    .stat4{
+        position: absolute;
+        left: 120px;
+        top: 60px;
     }
 }
